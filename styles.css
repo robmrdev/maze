@@ -14,11 +14,6 @@
     margin: 0 30%;
 }
 
-.tryMaze{
-    display: grid;
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: repeat(4, 60px);
-}
 
 .path{
     background-color: lightgreen;
@@ -120,9 +115,69 @@
     background-color: lightgreen;
 }
 
+.start{
+    background-color: lightskyblue;
+}
+
+.end{
+    background-color: lightgreen;
+}
+
 .tryDiv{
     width: 200px; 
     height: 200px; 
     background-color: lightblue;
 
+}
+
+
+
+select{
+    width: 150px;
+    border-radius: 15px;
+}
+#maze2Container img{
+    width: 40px;
+    position: absolute;
+}
+
+
+.tryMaze{
+    display: flex;
+    flex-direction: column;
+    border: 6px solid black;
+    border-radius: 10px;
+    position: relative ;
+}
+#wolf{
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url('./img/wolf.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#meat{
+    bottom: 5px;
+    right: 5px;
+}
+
+.row {
+display: flex;
+}
+.cell{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.wall{
+    background-color: lightslategray;
+}
+
+.hide-cursor{
+    cursor: none;
 }
