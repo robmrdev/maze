@@ -7,47 +7,8 @@
     flex-direction: column;
 }
 
-.maze{
-    display: grid;
-    grid-template-columns: repeat(5, 50px);
-    grid-template-rows: repeat(5, 50px);
-    margin: 0 30%;
-}
-
-
-.path{
-    background-color: lightgreen;
-}
-
 .wall{
     background-color: gray;
-}
-
-.path{
-    background-color: aliceblue;
-}
-
-.entrance{
-    background-color: lightskyblue;
-}
-
-.finish{
-    background-color: lightgreen;
-}
-
-.start{
-    background-color: lightskyblue;
-}
-
-.end{
-    background-color: lightgreen;
-}
-
-.tryDiv{
-    width: 200px; 
-    height: 200px; 
-    background-color: lightblue;
-
 }
 
 
@@ -83,6 +44,7 @@ select{
 #meat{
     bottom: 5px;
     right: 5px;
+    width: 110%;
 }
 
 .row {
