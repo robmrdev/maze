@@ -1,9 +1,4 @@
-//PRIMER LABERINTO
 
-
-
-
-//SEGUNDO LABERINTO
 
 
 let level1 = [
@@ -83,6 +78,7 @@ levelSelector.addEventListener("change", function(){
 
 
 function createMaze () {
+    
     for (let i=0; i<mazeArray.length; i++){
         let row = document.createElement("div");
         row.classList.add("row");
@@ -99,18 +95,8 @@ function createMaze () {
 }
 
     document.addEventListener("DOMContentLoaded", function () {
-        const walls = document.querySelectorAll(".wall");
-        const mazeContainer = document.querySelector(".mazeContainer1");
     
-        // mazeContainer.addEventListener("mouseenter", function (event) {
-        //     if (gameStarted) {
-        //         if (event.target.classList.contains("wall")) {
-        //             handleLoss();
-        //         } else if (event.target === mazeContainer) {
-        //             handleLoss();
-        //         }
-        //     }
-        // });
+        
     
         maze.addEventListener("click", function(event) {
             if (event.target.id === "wolf" && !gameStarted) {
@@ -132,138 +118,29 @@ function createMaze () {
                 alert("¡Ganaste! Llegaste al punto de destino (Finish).");
             }
         }
-    
-        mazeContainer.addEventListener("mouseover", function (event) {
-            if (gameStarted) {
-                if (event.target.classList.contains("wall")) {
-                    handleLoss();
-                } else if (event.target === mazeContainer) {
-                    handleLoss();
-                }
-            }
-        });
+
 
         maze.addEventListener("mouseover", function (event) {
             if (gameStarted && event.target.id === "meat") {
                 handleWin();
             }
         });
-
-    
-        // walls.forEach((wall) => {
-        //     wall.addEventListener("mouseenter", handleLoss);
-        // });
         
     });
 
+    maze.addEventListener("mouseover", function (event) {
+        if (gameStarted && event.target.classList.contains("wall")) {
+            alert("¡Cuidado! Estás tocando una pared.");
+        }
+    });
+    
+    maze.addEventListener("mouseout", function (event) {
+        if (gameStarted && event.relatedTarget === null) {
+            alert("¡Saliste del laberinto! Juego reiniciado.");
+            gameStarted = false;
+            wolf.style.left = "0px";
+            wolf.style.top = "0px";
+        }
+    });
 
 createMaze ()
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     let game2Started = false
-//     const start = document.querySelector(".start");
-//     const end = document.querySelector(".end");
-
-    
-    
-//     function detectarMovimientoMouse(className, direction) {
-//         const elements = document.querySelectorAll(`.${className}`);
-    
-//         elements.forEach((miDiv) => {
-//             miDiv.addEventListener('mouseleave', (event) => {
-//                 const mouseX = event.pageX;
-//                 const mouseY = event.pageY;
-    
-//                 const divRect = miDiv.getBoundingClientRect();
-//                 const divTop = divRect.top;
-//                 const divBottom = divRect.bottom;
-//                 const divLeft = divRect.left;
-//                 const divRight = divRect.right;
-    
-//                 if (direction === 'down' && mouseY > divBottom) {
-//                     alert('DOWN');
-//                 }
-//                 if (direction === 'right' && mouseX > divRight) {
-//                     alert('RIGHT');
-//                 }
-//                 if (direction === 'left' && mouseX < divLeft) {
-//                     alert('LEFT');
-//                 }
-//                 if (direction === 'up' && mouseY < divTop) {
-//                     alert('UP');
-//                 }
-//             });
-//         });
-//     }
-    
-
-
-//     start.addEventListener("click", function () {
-//         if (!game2Started) {
-//             game2Started = true;
-//             alert("¡Comenzaste el juego! Intenta llegar al punto de destino (Finish).");
-//             console.log(`${game2Started}`)
-            
-//             detectarMovimientoMouse('upDownLeft', 'left');
-//             detectarMovimientoMouse('upDownLeft', 'down');
-//             detectarMovimientoMouse('upDownLeft', 'up');
-    
-    
-//             detectarMovimientoMouse('upRight', 'up');
-//             detectarMovimientoMouse('upRight', 'right');
-    
-    
-    
-//             detectarMovimientoMouse('upLeftRight', 'up');
-//             detectarMovimientoMouse('upLeftRight', 'left');
-//             detectarMovimientoMouse('upLeftRight', 'right');
-    
-    
-//             detectarMovimientoMouse('downLeftRight', 'down')
-//             detectarMovimientoMouse('downLeftRight', 'left');
-//             detectarMovimientoMouse('downLeftRight', 'right');
-    
-    
-    
-//             detectarMovimientoMouse('downLeft', 'down');
-//             detectarMovimientoMouse('downLeft', 'left');
-    
-//             detectarMovimientoMouse('down', 'down');
-    
-//             detectarMovimientoMouse('upDownRight', 'up');
-//             detectarMovimientoMouse('upDownRight', 'down');
-//             detectarMovimientoMouse('upDownRight', 'right');
-    
-    
-//             detectarMovimientoMouse('upLeft', 'up');
-//             detectarMovimientoMouse('upLeft', 'left');
-    
-//             detectarMovimientoMouse('upDown', 'up');
-//             detectarMovimientoMouse('upDown', 'down');
-    
-//             detectarMovimientoMouse('left', 'left');
-    
-    
-//             detectarMovimientoMouse('downRight', 'down');
-//             detectarMovimientoMouse('downRight', 'right');
-    
-//             detectarMovimientoMouse('upDownRight', 'up');
-//             detectarMovimientoMouse('upDownRight', 'down');
-//             detectarMovimientoMouse('upDownLeft', 'left');
-    
-//             detectarMovimientoMouse('down', 'down');
-//         }
-//     });
-
-//     end.addEventListener("mouseenter", function () {
-//         if (game2Started) {
-//             game2Started = false;
-//             alert("Ganaste!");
-//             console.log(`${game2Started}`)
-//         }
-//     });
-
-
-// })
-
-
