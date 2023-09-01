@@ -3,16 +3,18 @@
     align-items: center;
     height: 100vh;
     justify-content: space-evenly;
-    background-color: lightcoral;
     flex-direction: column;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1900' height='900' preserveAspectRatio='none' viewBox='0 0 1900 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3crect width='1900' height='900' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1813.882%2c471.991C1911.319%2c477.924%2c2006.046%2c423.689%2c2051.657%2c337.383C2094.814%2c255.722%2c2065.027%2c161.731%2c2020.664%2c80.718C1973.896%2c-4.686%2c1911.231%2c-94.747%2c1813.882%2c-96.827C1714.169%2c-98.958%2c1633.743%2c-18.669%2c1591.204%2c71.54C1554.396%2c149.596%2c1579.536%2c235.768%2c1621.476%2c311.19C1665.014%2c389.485%2c1724.462%2c466.546%2c1813.882%2c471.991' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M847.8439254391402 560.3478215393901L694.5466017235644 635.1159220554067 769.314702239581 788.4132457709825 922.6120259551568 713.6451452549659z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M265.069%2c1037.394C345.855%2c1031.145%2c400.691%2c966.115%2c443.384%2c897.248C489.51%2c822.843%2c539.812%2c736.641%2c499.777%2c658.789C457.545%2c576.663%2c357.205%2c544.217%2c265.069%2c550.491C182.986%2c556.081%2c123.073%2c617.356%2c79.887%2c687.383C33.66%2c762.341%2c-9.607%2c851.261%2c31.577%2c929.104C74.579%2c1010.382%2c173.39%2c1044.486%2c265.069%2c1037.394' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1344.7078821896162 61.00945186895421L1244.8409430506795-42.4057909548926 1141.4257002268328 57.461148184044056 1241.2926393657694 160.87639100789087z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M361.161%2c810.001C386.992%2c809.637%2c407.92%2c791.537%2c420.835%2c769.163C433.748%2c746.793%2c439.24%2c719.457%2c426.347%2c697.075C413.436%2c674.661%2c387.024%2c666.023%2c361.161%2c665.565C334.305%2c665.09%2c305.585%2c671.61%2c291.851%2c694.694C277.88%2c718.177%2c284.422%2c747.468%2c298.499%2c770.888C312.095%2c793.506%2c334.774%2c810.373%2c361.161%2c810.001' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M222.053%2c670.292C297.706%2c668.422%2c346.988%2c600.283%2c384.827%2c534.746C422.668%2c469.206%2c456.981%2c392.491%2c420.839%2c325.999C383.558%2c257.411%2c300.043%2c231.857%2c222.053%2c235.284C150.165%2c238.443%2c87.298%2c279.879%2c51.383%2c342.232C15.535%2c404.467%2c11.574%2c479.436%2c44.721%2c543.151C80.699%2c612.308%2c144.121%2c672.218%2c222.053%2c670.292' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M537.3926411938404 294.7465930145797L428.39369193132313 89.2772283570814 317.6572219271336 259.79643873303723z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1943.262145260511 957.0028695307916L1794.86946501808 719.0205585265633 1676.0119501083338 933.4451914966309z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='1900' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 }
-
+h1{
+    color: rgb(202, 202, 202);
+    -webkit-text-stroke: 1px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
 .wall{
     background-color: gray;
 }
-
-
-
 select{
     width: 150px;
     border-radius: 15px;
@@ -21,7 +23,9 @@ select{
     width: 40px;
     position: absolute;
 }
-
+.mazeWrapper{
+    height: 70%;
+}
 
 .tryMaze{
     display: flex;
